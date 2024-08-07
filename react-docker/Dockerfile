@@ -34,7 +34,7 @@ RUN chown -R app:app .
 USER app
 
 # install dependencies
-RUN npm install
+RUN npm install --force
 
 # copy the rest of the files to the working directory
 COPY . .
